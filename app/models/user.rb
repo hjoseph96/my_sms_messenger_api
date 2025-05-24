@@ -1,5 +1,6 @@
 class User
   include Mongoid::Document
+  include Mongoid::Timestamps
   include Devise::JWT::RevocationStrategies::JTIMatcher
 
 
@@ -19,5 +20,5 @@ class User
   ## Rememberable
   field :remember_created_at, type: Time
 
-  include Mongoid::Timestamps
+  has_many :messages
 end

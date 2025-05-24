@@ -4,8 +4,7 @@ development:
     # Defines the default client. (required)
     default:
       # Mongoid can connect to a URI accepted by the driver:
-       uri: mongodb+srv://techniquea2z:Taicho1337-@mysmsmessenger.utilj7k.mongodb.net/?retryWrites=true&w=majority&appName=MySMSMessenger/my_sms_messenger
-
+       uri: mongodb+srv://techniquea2z:Taicho1337-@mysmsmessenger.utilj7k.mongodb.net/?retryWrites=true&w=majority&appName=MySMSMessenger/my_sms_messenger_db
 
 
 
