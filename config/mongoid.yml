@@ -21,8 +21,6 @@ production:
       uri: mongodb+srv://techniquea2z:Taicho1337-@cluster0.2hewar.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
   # Configure Mongoid-specific options. (optional)
   options:
-    username: 'techniquea2z'
-    password: "Taicho1337-"
 
   # Configure Driver-specific options. (optional)
   driver_options:
