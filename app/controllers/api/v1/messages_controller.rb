@@ -8,7 +8,10 @@ class Api::V1::MessagesController < ApplicationController
     @message.user = current_user
 
     if @message.save
-      render json: @message
+      render json: {
+        status: { code: 200, message: "Signed up successfully." },
+        data: MessageSerializer.new(@message).serializable_hash[:data][:attributes]
+      }
     else
       render json: { error: @message.errors.full_messages.join(", ") }
     end
