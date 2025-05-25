@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="09ff0d24-e43a-44a1-8820-5aa162c90693" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/mongoid.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/mongoid.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +136,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1748017659623</updated>
-      <workItem from="1748017660666" duration="36553000" />
+      <workItem from="1748017660666" duration="37151000" />
     </task>
     <servers />
   </component>
