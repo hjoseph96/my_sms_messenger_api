@@ -18,7 +18,7 @@ production:
     # Defines the default client. (required)
     default:
       # Mongoid can connect to a URI accepted by the driver:
-      uri: mongodb+srv://techniquea2z:<db_password>@cluster0.2hewar.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      uri: mongodb://techniquea2z:Taicho1337-@cluster0.2hewar.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
   # Configure Mongoid-specific options. (optional)
   options:
 
