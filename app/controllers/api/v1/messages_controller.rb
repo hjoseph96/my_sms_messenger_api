@@ -1,9 +1,6 @@
 class Api::V1::MessagesController < ApplicationController
   def index
-    render json: {
-      status: { code: 200, message: "Signed up successfully." },
-      messages: MessageSerializer.new(current_user.messages).serializable_hash[:data][:attributes]
-    }
+    render json: current_user.messages.order(created_at: :desc), each_serializer: MessageSerializer
   end
 
   def create
