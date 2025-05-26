@@ -12,7 +12,7 @@ class Api::V1::Users::SessionsController < Devise::SessionsController
       status: {
         code: 200, message: "Logged in successfully."
       },
-      data: user_attrs
+      user: user_attrs
     }, status: :ok
   end
 
