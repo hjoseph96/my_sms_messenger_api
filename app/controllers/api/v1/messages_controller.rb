@@ -2,7 +2,7 @@ class Api::V1::MessagesController < ApplicationController
   def index
     render json: {
       status: { code: 200, message: "Signed up successfully." },
-      data: MessageSerializer.new(current_user.messages).serializable_hash[:data][:attributes]
+      messages: MessageSerializer.new(current_user.messages).serializable_hash[:data][:attributes]
     }
   end
 
@@ -13,7 +13,7 @@ class Api::V1::MessagesController < ApplicationController
     if @message.save
       render json: {
         status: { code: 200, message: "Signed up successfully." },
-        data: MessageSerializer.new(@message).serializable_hash[:data][:attributes]
+        message: MessageSerializer.new(@message).serializable_hash[:data][:attributes]
       }
     else
       render json: { error: @message.errors.full_messages.join(", ") }, status: :unprocessable_content
