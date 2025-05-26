@@ -16,7 +16,7 @@ class Api::V1::MessagesController < ApplicationController
         data: MessageSerializer.new(@message).serializable_hash[:data][:attributes]
       }
     else
-      render json: { error: @message.errors.full_messages.join(", ") }
+      render json: { error: @message.errors.full_messages.join(", ") }, status: :unprocessable_content
     end
   end
 
