@@ -16,7 +16,7 @@ class Message
     @client.messages
            .create(
              body: self.content,
-             from: '+1 (718) 307-2924',
+             from: "+1 (718) 307-2924",
              to: self.receiver_phone_number
            )
   end
